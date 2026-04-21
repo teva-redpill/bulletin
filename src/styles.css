@@ -40,7 +40,6 @@ input {
   font: inherit;
 }
 
-/* LAYOUT */
 .page {
   min-height: 100vh;
   display: flex;
@@ -50,13 +49,12 @@ input {
 
 .screen {
   width: 100%;
-  max-width: 380px; /* slightly reduced */
+  max-width: 380px;
 }
 
-/* LOGO */
 .logo-wrap {
   text-align: center;
-  margin: 40px 0 22px;
+  margin: 36px 0 18px;
 }
 
 .logo {
@@ -64,12 +62,12 @@ input {
   align-items: center;
   gap: 10px;
   color: var(--blue);
-  font-size: 26px; /* reduced */
+  font-size: 26px;
   font-weight: 500;
 }
 
 .logo-badge {
-  width: 44px; /* reduced */
+  width: 44px;
   height: 44px;
   border-radius: 50%;
   background: var(--blue);
@@ -82,19 +80,17 @@ input {
   font-weight: 400;
 }
 
-/* CARD */
 .card {
   background: var(--card);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
-  padding: 24px 18px 20px; /* reduced */
+  padding: 24px 18px 20px;
 }
 
-/* TEXT */
 .eyebrow {
   text-align: center;
   color: #445a77;
-  font-size: 16px; /* reduced */
+  font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
 }
@@ -102,7 +98,7 @@ input {
 .title {
   text-align: center;
   color: var(--text);
-  font-size: 28px; /* reduced */
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
   margin: 0 0 20px;
@@ -115,20 +111,19 @@ input {
 .description {
   text-align: center;
   color: #506684;
-  font-size: 16px; /* reduced */
+  font-size: 16px;
   line-height: 1.4;
   margin: 0 0 20px;
 }
 
-/* INPUT */
 .field {
   width: 100%;
-  height: 60px; /* reduced */
+  height: 60px;
   border: 2px solid #d2dbe7;
   border-radius: 14px;
   background: #fff;
   padding: 0 16px;
-  font-size: 18px; /* reduced */
+  font-size: 18px;
   color: #70839d;
   outline: none;
   margin-bottom: 14px;
@@ -144,15 +139,14 @@ input {
   color: #98a8bc;
 }
 
-/* BUTTON */
 .btn {
   width: 100%;
-  height: 64px; /* reduced */
+  height: 64px;
   border: none;
   border-radius: 14px;
   background: #e9edf2;
   color: #9aa8b8;
-  font-size: 18px; /* reduced */
+  font-size: 18px;
   font-weight: 600;
   cursor: not-allowed;
   transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
@@ -168,7 +162,6 @@ input {
   transform: translateY(1px);
 }
 
-/* ERROR */
 .error-message {
   margin: 0 0 14px;
   color: #d92d20;
@@ -176,11 +169,10 @@ input {
   line-height: 1.4;
 }
 
-/* FOOTER */
 .footer-note {
   text-align: center;
   color: #61748e;
-  font-size: 14px; /* reduced */
+  font-size: 14px;
   line-height: 1.4;
   margin: 28px auto 0;
   max-width: 90%;
@@ -191,71 +183,60 @@ input {
   text-align: center;
   margin-top: 18px;
   color: #1c6fe5;
-  font-size: 16px; /* reduced */
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
 
-/* NAV */
-.top-actions {
-  display: flex;
-  justify-content: flex-start;
-  margin: 6px 0 12px;
-}
-
-.back-link {
-  appearance: none;
-  border: 0;
-  background: transparent;
-  color: var(--blue);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-}
-
-/* BULLETIN */
 .period {
   text-align: center;
-  color: #465c79;
-  font-size: 16px; /* reduced */
-  font-weight: 600;
-  margin: 0 0 10px;
+  color: #5b6f88;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.bulletin-title {
+  font-size: 24px;
+  margin: 0 0 18px;
+}
+
+.bulletin-card {
+  padding-top: 28px;
 }
 
 .alert {
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 2px solid var(--info-border);
-  background: var(--info-bg);
+  border: 2px solid #5cc7d6;
+  background: #e9f7fb;
   border-radius: 14px;
   padding: 14px;
-  margin: 0 0 20px;
+  margin: 0 0 22px;
 }
 
 .alert-icon {
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #12b9d8;
   color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .alert-text {
   color: #163259;
-  font-size: 14px;
-  line-height: 1.35;
+  font-size: 15px;
+  line-height: 1.4;
   font-weight: 500;
 }
 
-/* DATA */
 .info-list {
   margin-top: 6px;
 }
@@ -269,14 +250,14 @@ input {
 }
 
 .label {
-  color: #596e8a;
-  font-size: 14px; /* reduced */
+  color: #5c6f87;
+  font-size: 15px;
   line-height: 1.2;
 }
 
 .value {
   color: var(--text);
-  font-size: 14px; /* reduced */
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
   text-align: right;
@@ -284,14 +265,13 @@ input {
 }
 
 .divider {
-  width: 44%;
+  width: 36%;
   height: 2px;
-  background: #e3e9f0;
+  background: #e5ebf2;
   margin: 10px auto 14px;
   border-radius: 999px;
 }
 
-/* TABLET */
 @media (min-width: 768px) {
   .page {
     padding: 40px 20px 60px;
@@ -299,6 +279,10 @@ input {
 
   .card {
     padding: 32px 32px 28px;
+  }
+
+  .bulletin-card {
+    padding-top: 34px;
   }
 
   .field,

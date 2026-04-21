@@ -87,19 +87,15 @@ function VerificationScreen({ code, onCodeChange, onSubmit, error, isValid }) {
   );
 }
 
-function BulletinScreen({ bulletin, onBack }) {
+function BulletinScreen({ bulletin }) {
   return (
     <section className="page">
       <div className="screen">
-        <div className="top-actions">
-          <button type="button" className="back-link" onClick={onBack}>
-            ← Retour
-          </button>
-        </div>
+        <Logo />
 
-        <div className="card">
+        <div className="card bulletin-card">
           <p className="period">{bulletin.periodLabel}</p>
-          <h2 className="title title-left-space">Informations du bulletin de paie</h2>
+          <h2 className="title bulletin-title">Informations du bulletin de paie</h2>
 
           <div className="alert">
             <div className="alert-icon">✓</div>
@@ -164,20 +160,15 @@ export default function App() {
     const bulletin = bulletinsByCode[code];
 
     if (!bulletin) {
-      setError('Code introuvable. Essayez 123456, 654321 ou 111111 pour tester.');
+      setError('Code introuvable. Essayez 769313, 921204 ou 742460 pour tester.');
       return;
     }
 
     setSelectedBulletin(bulletin);
   };
 
-  const handleBack = () => {
-    setSelectedBulletin(null);
-    setError('');
-  };
-
   if (selectedBulletin) {
-    return <BulletinScreen bulletin={selectedBulletin} onBack={handleBack} />;
+    return <BulletinScreen bulletin={selectedBulletin} />;
   }
 
   return (
